@@ -16,5 +16,4 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('admin/apartments', 'App\Http\Cpntrollers\ApartmentsController');
-Route::get('/a', [\App\Http\Controllers\ApartmentController::class, 'index']);
+Route::get('/apartments', [\App\Http\Controllers\ApartmentsController::class, 'create']);
